@@ -118,7 +118,7 @@ body, html {
 }
 .modal-transparencia {
     background-color: rgba(255, 255, 255, 0.2);
-    background-image: url('./images/fondo-nubes.png');
+    background-image: url('images/fondo-nubes.png');
     color: white;
 }
 .custom-form .form-control {
@@ -151,7 +151,7 @@ body, html {
     max-width: 540px; /* Mantiene el ancho máximo de la tarjeta */
     width: 100%; /* Asegura que la tarjeta use el 100% del ancho disponible en su contenedor */
     margin-right: 35px;
-    background-image: url('./images/fondo-nubes.png'); /* Reemplaza con la ruta de tu imagen */
+    background-image: url('images/fondo-nubes.png'); /* Reemplaza con la ruta de tu imagen */
     background-size: cover; /* Hace que la imagen cubra todo el fondo del card */
     background-position: center; /* Centra la imagen de fondo */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
