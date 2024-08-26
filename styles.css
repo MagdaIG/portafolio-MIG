@@ -4,7 +4,7 @@ body, html {
     height: 100%;
     width: 100%;
     font-family: Arial, sans-serif;
-    background: url('/images/fondo-nubes.png') no-repeat center center fixed;
+    background: url('images/fondo-nubes.png') no-repeat center center fixed;
     background-size: cover;
     z-index: 0; /* Fondo en el nivel más bajo */
 }
