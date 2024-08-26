@@ -1,0 +1,266 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    background: url('/images/fondo-nubes.png') no-repeat center center fixed;
+    background-size: cover;
+    z-index: 0; /* Fondo en el nivel más bajo */
+}
+
+.static-item {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    z-index: 1; /* Elevar el nivel del contenido sobre el fondo */
+}
+
+.static-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: 1; /* Asegurarse de que esté visible sobre el fondo */
+}
+
+
+.caption, .profile-pic {
+    position: absolute;
+    z-index: 2; /* Asegura que el texto y la foto estén encima de todo */
+}
+
+.caption {
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para mejorar la legibilidad */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+/* Definición de la animación IMAGEN PROFILE */
+@keyframes slideIn {
+    from {
+        transform: translateX(-100px); /* Comienza desplazada 100px a la izquierda */
+        opacity: 0; /* Comienza invisible */
+    }
+    to {
+        transform: translateX(0); /* Llega a su posición final */
+        opacity: 1; /* Termina visible */
+    }
+}
+/* Estilos base de la imagen de perfil */
+.profile-pic {
+    position: absolute; /* Asegura que la imagen se coloque en una posición específica */
+    top: 60%;
+    left: 120px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid white; /* Añadir un borde blanco para mejor visualización */
+    animation: slideIn 1s ease-out forwards; /* Animación de entrada */
+}
+
+.profile-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.section-padding {
+    padding: 50px 0;
+    position: relative;
+    z-index: 1; /* Asegurarse de que el contenido esté visible */
+}
+
+
+/* Sección de Navbar */
+.navbar-custom {
+    background-color: rgb(0, 0, 0);
+    border-bottom: 2px solid rgba(113, 64, 159, 0.99); /* Borde inferior con un color morado oscuro */
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link {
+    color: #ffffff; /* Texto en blanco */
+    font-weight: bold;
+}
+
+.navbar-custom .navbar-brand:hover,
+.navbar-custom .nav-link:hover {
+    color: rgba(144, 95, 181, 0.99); /* Cambia a rojo oscuro al pasar el ratón */
+}
+
+.navbar-custom .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(74, 14, 129, 0.99)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); /* Íconos del botón en un color púrpura oscuro */
+}
+
+
+
+.navbar-custom .nav-link.active {
+    color: rgba(219, 192, 246, 0.99); /* Color morado para la opción activa */
+}
+
+/* FORMULARIO */
+
+.custom-form {
+    background-color: #a080e4;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+}
+.modal-transparencia {
+    background-color: rgba(255, 255, 255, 0.2);
+    background-image: url('./images/fondo-nubes.png');
+    color: white;
+}
+.custom-form .form-control {
+    background-color: #e9ecef;
+    border: none;
+}
+.custom-form .btn {
+    background-color: #563d7c;
+    color: white;
+}
+.custom-form .btn:hover {
+    background-color: #452d66;
+}
+.success-message {
+    background-color: #a080e4;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+}
+
+
+/* posicionamiento de la tarjeta al lado derecho en el inicio de la pagina */
+.card-personal {
+    position: absolute;
+    right: 0;
+    top: 20%;
+    transform: translateY(-50%);
+    z-index: 3;
+    max-width: 540px; /* Mantiene el ancho máximo de la tarjeta */
+    width: 100%; /* Asegura que la tarjeta use el 100% del ancho disponible en su contenedor */
+    margin-right: 35px;
+    background-image: url('./images/fondo-nubes.png'); /* Reemplaza con la ruta de tu imagen */
+    background-size: cover; /* Hace que la imagen cubra todo el fondo del card */
+    background-position: center; /* Centra la imagen de fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    padding: 20px; /* Agrega padding para que el contenido no quede pegado al borde */
+    border-radius: 10px; /* Opcional: bordes redondeados */
+    box-shadow: 0px 4px 10px rgba(2, 2, 2, 2); /* sombra */
+    color: black;
+}
+.caja-cabecera{
+    font-weight: bold;
+}
+/* INFORMACION PERSONAL EN TARJETAS */
+/* Estilos para asegurar la uniformidad de las tarjetas */
+
+
+/* ANIMACION DE TARJETAS */
+
+/* Definición de la animación */
+@keyframes slideInUp {
+    from {
+        transform: translateY(100px); /* Desplazamiento inicial para el efecto de movimiento */
+        opacity: 0; /* Comienza invisible */
+    }
+    to {
+        transform: translateY(0); /* Movimiento hacia la posición final */
+        opacity: 1; /* Termina visible */
+    }
+}
+
+/* Configuración de las tarjetas para la animación */
+.card {
+    opacity: 0; /* Ocultar inicialmente para la animación */
+    transform: translateY(100px); /* Posición inicial fuera de la vista */
+    animation: slideInUp 0.8s ease-out forwards; /* Animación de entrada */
+}
+.card.show {
+    animation: slideInUp 0.8s ease-out forwards; /* Ejecuta la animación cuando la clase 'show' está presente */
+}
+
+/* Aplicar diferentes retrasos a cada tarjeta para un efecto de cascada */
+.row > .col:nth-child(1) .card {
+    animation-delay: 0.4s; /* 0.2 segundos de retraso */
+}
+
+.row > .col:nth-child(2) .card {
+    animation-delay: 0.6s; /* 0.4 segundos de retraso */
+}
+
+.row > .col:nth-child(3) .card {
+    animation-delay: 0.8s; /* 0.6 segundos de retraso */
+}
+
+
+/* Tamaño uniforme para las imágenes de las tarjetas con altura ajustada */
+.card-image {
+    width: 100%;
+    height: 280px; /* Aumenté la altura a 250px */
+    object-fit: cover;
+}
+
+/* botón quede alineado al final del cuerpo de la tarjeta */
+.card-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-body .btn {
+    margin-top: auto; /* Empuja el botón al final del card-body */
+    background-color: #6f42c1; /* Color de fondo morado */
+    border-color: #6f42c1; /* Borde morado */
+    color: white; /* Color del texto en blanco */
+}
+
+.card-body .btn:hover {
+    background-color: #a080e4; /* Color morado más oscuro al pasar el mouse */
+    border-color: #a080e4; /* Borde morado más oscuro al pasar el mouse */
+}
+
+
+/* Carousel contenido*/
+.content-box {
+    background-color: rgba(255, 255, 255, 0.2); /* Caja semitransparente */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+.content-box-name {
+    background-color: rgba(255, 253, 171, 0.2); /* Caja semitransparente */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    color: darkgray;
+}
+
+.tarjeta-informativa{
+    display: none;
+}
+.tarjeta-inf-progresso{
+    display: none;
+}
+
+.super {
+    transition: box-shadow 0.3s ease, background-color 0.3s ease; /* Transición suave para el hover */
+}
+
+.super:hover {
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 20); /* Agrega la sombra al hacer hover */
+}
+/*
+.rotalo {
+    animation:
+}

@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portafolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"/>
+
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-custom">
+    <div class="container">
+        <a class="navbar-brand" target="_blank" href="https://github.com/MagdaIG">
+            <img src="./images/github-mark-white.png" alt="Logo" width="25" class="d-inline-block align-text-top">
+            @MagdaIG
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#sobre-mi">Sobre Mi</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#mi-experiencia">Mi Experiencia</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#contactModal">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- Información personal 1 -->
+<div>
+<div class="static-item">
+    <img src="/images/fondo1.png" alt="Descripción de la imagen">
+    <div class="caption">
+        <h5>Hola! Soy Magdalena Inalaf</h5>
+        <p>Estudiante de Programación y Análisis de Sistemas</p>
+    </div>
+    <div class="profile-pic">
+        <img src="./images/mifoto.jpeg" alt="Mi foto">
+    </div>
+    <div class="card card-personal content-box text-center tarjeta-informativa super" id="tarjeta-informativa">
+        <div class="card-header caja-cabecera"  id="tarjeta-informativa-cabecera">
+            Información
+        </div>
+        <div class="card-body">
+            <h5 class="card-title" id="tarjeta-informativa-titulo">Special title treatment</h5>
+            <p class="card-text">
+                <div id="tarjeta-informativa-texto"></div>
+                <div id="trabajos" style="display: none">
+                    Te dejo algunos de mis trabajos en GitHub <i class="bi bi-github"></i>
+
+                    <br />
+                    <br />
+                    <a class="btn btn-success" href="https://magdaig.github.io/Evaluacion-energyAndWater/" target="_blank">Energy and Water</a>
+                    <a class="btn btn-success" href="https://github.com/MagdaIG" target="_blank">Ver mi GitHub</a>
+
+                </div>
+                <div id="educacion" style="display: none">
+                    2023 - Presente Técnico en Informática (En Pausa) <br />Instituto Profesional San Sebastián - Santiago, Chile.
+                    <hr>
+                    2017 - 2019 Pedagogía y Literatura en Castellano (Pregrado incompleto) <br />Universidad Ciencias de la Educación (UMCE) - Santiago, Chile.
+                    <hr>
+                    2016  Ingeniería en Ejecución en Geomensura (Pregrado incompleto) <br />Universidad de Santiago de Chile (USACH) - Santiago, Chile.
+                    <hr>
+                    2013 - 2015 Ingeniería Civil en Computación e Informática (Pregrado incompleto) <br />Universidad Tecnologica Metropolitana (UTEM) - Santiago, Chile.
+                </div>
+                <div id="habilidades" style="display: none">
+                    <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                      <div class="progress-bar bg-success" style="width: 25%">Laravel</div>
+                    </div>
+                    <div class="progress" role="progressbar" aria-label="Info example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                      <div class="progress-bar bg-info text-dark" style="width: 50%">JavaScript</div>
+                    </div>
+                    <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                      <div class="progress-bar bg-warning text-dark" style="width: 75%">CSS</div>
+                    </div>
+                    <div class="progress" role="progressbar" aria-label="Danger example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                      <div class="progress-bar bg-danger" style="width: 100%">HTML</div>
+                    </div>
+                    <br />
+                    <p> Me encanta trabajar en la web, desde el back-end con Laravel hasta darle vida al front-end con JavaScript, CSS y HTML. Siempre busco crear experiencias que sean tanto bonitas como funcionales <i class="bi bi-heart-fill"></i></p>
+                </div>
+            </p>
+        </div>
+    </div>
+
+</div>
+
+<!-- Carousel Información personal -->
+
+<div id="personalInfoCarousel" class="carousel carousel-dark slide">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#personalInfoCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Quién soy"></button>
+        <button type="button" data-bs-target="#personalInfoCarousel" data-bs-slide-to="1" aria-label="Información personal"></button>
+        <button type="button" data-bs-target="#personalInfoCarousel" data-bs-slide-to="2" aria-label="Mi Experiencia"></button>
+    </div>
+    <div class="carousel-inner">
+        <!-- Sección 1: Quién soy -->
+        <div class="carousel-item active" data-bs-interval="10000">
+            <div class="container text-center section-padding" id="sobre-mi">
+                <div class="row">
+                    <div class="col">
+                        <div class="content-box super">
+                            <h2><strong>¿Quién soy?</strong> <i class="bi bi-emoji-smile"></i></h2>
+                            <p class="text-muted">A Web Designer / Developer Located In Our Lovely Earth</p>
+                            <p>Soy una apasionada del aprendizaje, siempre en busca de nuevos desafíos. Como eterna estudiante en el área de desarrollo web y en formación como analista programadora ¡Invito a explorar mi trabajo y descubrir cómo transformo mi curiosidad y dedicación en soluciones creativas!</p>
+                            <a href="cv.pdf" class="btn btn-outline-danger">Descarga mi CV</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sección 2: Información personal -->
+        <div class="carousel-item" data-bs-interval="2000">
+            <div class="container text-center section-padding">
+                <div class="row">
+                    <div class="col">
+                        <div class="content-box super">
+                            <h2><strong>Información personal</strong></h2>
+                            <p><strong>Nombre:</strong> Magdalena Inalaf González</p>
+                            <p><strong>Fecha de nacimiento:</strong> 13/03/1994</p>
+                            <p><strong>Email:</strong> magda.inalaf@gmail.com</p>
+                            <p><strong>Teléfono:</strong> + 1 (306) 261-5831</p>
+                            <p><strong>Github:</strong> @MagdaIG</p>
+                            <div>
+                                <a target="_blank" href="https://www.facebook.com/MagdalenaInalaf"><img src="https://img.icons8.com/fluent/48/000000/facebook-new.png"/></a>
+                                <a target="_blank" href="https://github.com/MagdaIG"><img src="https://img.icons8.com/fluent/48/000000/github.png"/></a>
+                                <a target="_blank" href="https://www.instagram.com/minalaf.g/"><img src="https://img.icons8.com/fluent/48/000000/instagram-new.png"/></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sección 3: Mi Experiencia -->
+        <div class="carousel-item">
+            <div class="container text-center section-padding">
+                <div class="row">
+                    <div class="col">
+                        <div class="content-box super">
+                            <h2><strong>Mi Experiencia</strong></h2>
+                            <p><strong>UX/UI Design</strong><br>Creación de interfaces intuitivas y visualmente atractivas.</p>
+                            <p><strong>Web Development</strong><br>Desarrollo de sitios web usando HTML, CSS y JavaScript. Aprendiendo Vue.js.</p>
+                            <p><strong>Digital Marketing</strong><br>Estrategias en SEO y redes sociales para aumentar la visibilidad online.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#personalInfoCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#personalInfoCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+<!-- Información personal en tarjetas -->
+<div class="container text-center section-padding" id="mi-experiencia">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+            <div class="card h-100 content-box card-image super">
+                <img src="./images/trabajos.png" class="card-img-top card-image" alt="Trabajos">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title"> <strong>Trabajos</strong></h5>
+                    <p class="card-text">He realizado algunos trabajos que me encantaría compartir contigo <i class="bi bi-heart"></i>
+                    </p>
+                    <a href="#" class="btn btn-primary mt-auto" id="boton-trabajos">Más información</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100 content-box super">
+                <img src="./images/academico.png" class="card-img-top card-image" alt="Educación">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title"><strong>Educación</strong></h5>
+                    <p class="card-text">A lo largo de los años he estudiado en distintas instituciones <i class="bi bi-backpack"></i></p>
+                    <a href="#" class="btn btn-primary mt-auto" id="boton-academico">Más información</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100 content-box super">
+                <img src="./images/skills.png" class="card-img-top card-image" alt="Skills">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title"><strong>Skills</strong></h5>
+                    <p class="card-text">Mis habilidades están fuertemente en el Desarrollo WEB <i class="bi bi-laptop"></i></p>
+                    <a href="#" class="btn btn-primary mt-auto" id="boton-skills">Más información</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Modal de Contacto -->
+<div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content modal-transparencia">
+            <div class="modal-header">
+                <h5 class="modal-title" id="contactModalLabel"> <strong>CONTACTAME</strong></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form class="custom-form needs-validation" action="success.html" method="get">
+                    <div class="form-group mb-3">
+                        <label for="name">Nombre</label>
+                        <input type="text" minlength="2" class="form-control" id="name" name="name" placeholder="Ingrese su nombre" required>
+                        <div class="invalid-feedback">
+                            Por favor, ingrese un nombre válido (al menos 2 caracteres).
+                        </div>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="phone">Teléfono</label>
+                        <input type="tel" pattern="[0-9]{9}" class="form-control" id="phone" name="phone" placeholder="Ingrese su teléfono" required>
+                        <div class="invalid-feedback">
+                            Por favor, ingrese un número de teléfono válido.
+                        </div>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="email">Correo electrónico</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Ingrese su correo electrónico" required>
+                        <div class="invalid-feedback">
+                            Por favor, ingrese un correo electrónico válido.
+                        </div>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="message">Mensaje</label>
+                        <textarea class="form-control" id="message" name="message" rows="3" placeholder="Escriba su mensaje" required></textarea>
+                        <div class="invalid-feedback">
+                            El mensaje no puede estar vacío.
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<h2 class="content-box-name text-center">Magdalena Inalaf G.</h2>
+<script>
+    const botonTrabajo=document.getElementById("boton-trabajos")
+    function mostrarTrabajos() {
+        const tarjetaInformativa=document.getElementById("tarjeta-informativa")
+        tarjetaInformativa.style.display ="block"
+        document.getElementById("tarjeta-informativa-cabecera").innerText = "Trabajos"
+        document.getElementById("tarjeta-informativa-titulo").innerText = "¡Descubre mi último proyecto creativo! Estoy emocionada de compartir mis diseños contigo. ¡Échales un vistazo y dime qué piensas!"
+        document.getElementById("habilidades").style.display = 'none';
+        document.getElementById("educacion").style.display = 'none';
+        document.getElementById("trabajos").style.display = 'block';
+    }
+    botonTrabajo.addEventListener("click", mostrarTrabajos)
+
+    const botonAcademico=document.getElementById("boton-academico")
+    function mostrarAcacemico() {
+        const tarjetaInformativa=document.getElementById("tarjeta-informativa")
+        tarjetaInformativa.style.display ="block"
+        document.getElementById("tarjeta-informativa-cabecera").innerText = "Información Académica"
+        document.getElementById("tarjeta-informativa-titulo").innerText = "He estudiando en:"
+        document.getElementById("habilidades").style.display = 'none';
+        document.getElementById("educacion").style.display = 'block';
+        document.getElementById("trabajos").style.display = 'none';
+
+    }
+    botonAcademico.addEventListener("click", mostrarAcacemico)
+
+    const botonSkills=document.getElementById("boton-skills")
+    function mostrarSkills() {
+        const tarjetaInformativa=document.getElementById("tarjeta-informativa")
+        tarjetaInformativa.style.display ="block"
+        document.getElementById("tarjeta-informativa-cabecera").innerText = "Habilidades"
+        document.getElementById("tarjeta-informativa-titulo").innerText = "Alguna de mis habilidades incluyen:"
+        tarjetaInformativa.classList.add("rotalo")
+
+        document.getElementById("habilidades").style.display = 'block';
+        document.getElementById("educacion").style.display = 'none';
+        document.getElementById("trabajos").style.display = 'none';
+
+        botonSkills.addEventListener("click", mostrarSkills)
+    }
+    botonSkills.addEventListener("click", mostrarSkills)
+
+
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
