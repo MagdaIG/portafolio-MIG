@@ -195,8 +195,6 @@ body, html {
 }
 /* INFORMACION PERSONAL EN TARJETAS */
 /* Estilos para asegurar la uniformidad de las tarjetas */
-
-
 /* ANIMACION DE TARJETAS */
 
 /* Definición de la animación */
@@ -260,9 +258,27 @@ body, html {
     border-color: #a080e4; /* Borde morado más oscuro al pasar el mouse */
 }
 
-.btn-custom {
-    margin: 15px;
+.trabajos-container {
+    display: flex;
+    flex-wrap: wrap; /* Para que los botones se acomoden en varias filas */
+    justify-content: center; /* Centrar los botones */
+    gap: 15px; /* Espacio entre los botones */
 }
+
+.btn-custom {
+    flex: 1 1 200px; /* Cada botón tendrá un tamaño mínimo de 200px */
+    margin: 10px;
+    text-align: center;
+    background-color: #6f42c1; /* Color de fondo morado */
+    border-color: #6f42c1; /* Borde morado */
+    color: white; /* Texto en blanco */
+}
+
+.btn-custom:hover {
+    background-color: #a080e4; /* Cambiar el color al pasar el mouse */
+    border-color: #a080e4;
+}
+
 /* Carousel contenido*/
 .content-box {
     background-color: rgba(255, 255, 255, 0.2); /* Caja semitransparente */
@@ -289,11 +305,7 @@ body, html {
 .super:hover {
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 20); /* Agrega la sombra al hacer hover */
 }
-/*
-.rotalo {
-    animation:
-}
- */
+
 
 .presentacion {
     background-image: url("images/fondo1.png");
