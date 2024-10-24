@@ -269,28 +269,28 @@ body, html {
     flex: 1 1 200px; /* Cada botón tendrá un tamaño mínimo de 200px */
     margin: 10px;
     text-align: center;
-    background-color: #6f42c1; /* Color de fondo morado */
-    border-color: #6f42c1; /* Borde morado */
+    background-color: #6f42c1;
+    border-color: #6f42c1; /
     color: white; /* Texto en blanco */
 }
 
 .btn-custom:hover {
-    background-color: #a080e4; /* Cambiar el color al pasar el mouse */
+    background-color: #a080e4;
     border-color: #a080e4;
 }
 
 /* Carousel contenido*/
 .content-box {
-    background-color: rgba(255, 255, 255, 0.2); /* Caja semitransparente */
+    background-color: rgba(255, 255, 255, 0.2);
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 .content-box-name {
-    background-color: rgba(255, 253, 171, 0.2); /* Caja semitransparente */
+    background-color: rgba(255, 253, 171, 0.2);
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     color: darkgray;
 }
 
